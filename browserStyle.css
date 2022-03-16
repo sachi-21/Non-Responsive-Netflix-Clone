@@ -1,0 +1,248 @@
+:root {
+	--primary-color: #ff0000;
+	--dark-color: #141414;
+	--light-color: #f4f4f4;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: #000;
+	color: #999;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+p {
+	margin: 0.5rem 0;
+}
+
+img {
+	width: 100%;
+}
+
+.showcase {
+	width: 100%;
+	/* height: 93vh; */
+    height: 102vh;
+	position: relative;
+	background: url('83-Trailer-224.jpg') no-repeat center center/cover;
+}
+
+.showcase::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.4);
+	/* box-shadow: inset 60px 50px 50px 50px #000000, inset -120px -100px 250px #000000; */
+}
+
+.showcase-top {
+	position: relative;
+	z-index: 2;
+	height: 90px;
+}
+
+.showcase-top img {
+	width: 170px;
+	position: absolute;
+	top: 50%;
+	left: 7%;
+	transform: translate(-50%, -50%);
+	margin-left: 0;
+}
+
+.showcase-top a {
+	position: absolute;
+	top: 490px;
+	left: 95px;
+	transform: translate(-50%, -50%);
+}
+
+.showcase-content {
+	position: relative;
+	z-index: 2;
+	width: 65%;
+	/* margin: auto; */
+	/* display: flex; */
+    padding-left: 50px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* text-align: center; */
+	margin-top: 9rem;
+}
+
+.showcase-content h1 {
+	font-weight: 700;
+	font-size: 3rem;
+    padding-bottom: 20px;
+	line-height: 0.5;
+	margin: 0 0 2rem;
+    color: rgb(83, 37, 5);
+}
+
+.showcase-content p {
+	color: rgb(90, 59, 34);
+    max-width: 600px;
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.25;
+	margin: 0 0 2rem;
+} 
+
+.btn {
+	display: inline-block;
+	background:  rgb(145, 100, 68);
+	color: rgb(66, 30, 5);
+	font-size: 1.2rem;
+    font-weight: 700;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	margin-right: 0.5rem;
+    padding-right: 27px;
+    padding-left: 27px;
+    padding-top: 9px;
+    letter-spacing: 1.8px;
+    padding-bottom: 9px;
+	transition: opacity 0.2s ease-in;
+	outline: none;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	border-radius: 4px;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+.btn-rounded {
+	border-radius: 5px;
+}
+
+.drama{
+    padding-left: 110px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.drama img{
+    height: 250px;
+    width: 300px;
+    justify-content: space-around;
+    padding-top: 65px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+}
+
+.brow-2{
+    padding-left: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+    
+}
+
+.brow-2 h4{
+    font-weight: 200;
+	font-size: 3rem;
+     padding: 20px;
+	line-height: 1.5;
+	margin: 0 0 4rem;
+    color: rgb(255, 255, 255);
+}
+
+.brow-2 p {
+	color: rgb(255, 255, 255);
+	font-weight:400;
+	font-size: 1.2rem;
+	line-height: 1.25;
+	margin: 0 0 2rem;
+    padding: 20px;
+    max-width: 600px;
+    
+    padding-right: 60px;
+} 
+
+.brow-2 img{
+    max-width: 100%;
+    height: 400px;
+    width: 600px;
+    flex-basis: 40%;
+}
+
+.brow-2 image{
+    flex-basis: 40%;
+}
+
+.btn-brow{
+    display: inline-block;
+	background:  rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font-size: 1.2rem;
+    font-weight: 700;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	margin-right: 0.5rem;
+    padding-right: 27px;
+    padding-left: 27px;
+    padding-top: 9px;
+    letter-spacing: 1.8px;
+    padding-bottom: 9px;
+	transition: opacity 0.2s ease-in;
+	outline: none;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	border-radius: 4px;
+
+}
+
+
+.footer,
+.footer a {
+	color: #999;
+	font-size: 0.9rem;
+    padding-left: 100px;
+    text-decoration: none;
+}
+
+.footer p {
+	margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+	background-color: black;
+  padding: 20px;
+}
+
+.footer li {
+	line-height: 1.9;
+}
+
+.footer .lang-select {
+	margin-top: 2rem;
+	color: #999;
+	background-color: #000;
+	background-image: none;
+	border: 1px solid #333;
+	padding: 1rem 1.2rem;
+	border-radius: 5px;
+}
